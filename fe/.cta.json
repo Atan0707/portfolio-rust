@@ -3,7 +3,7 @@
   "mode": "file-router",
   "typescript": true,
   "tailwind": true,
-  "packageManager": "pnpm",
+  "packageManager": "yarn",
   "addOnOptions": {
     "prisma": {
       "database": "postgres"
@@ -14,10 +14,9 @@
   "framework": "react-cra",
   "chosenAddOns": [
     "eslint",
-    "cloudflare",
-    "start",
     "prisma",
     "shadcn",
-    "tanstack-query"
+    "tanstack-query",
+    "start"
   ]
 }

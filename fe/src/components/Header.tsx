@@ -73,6 +73,32 @@ export default function Header() {
           {/* Demo Links Start */}
 
           <Link
+            to="/demo/prisma"
+            onClick={() => setIsOpen(false)}
+            className="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-800 transition-colors mb-2"
+            activeProps={{
+              className:
+                'flex items-center gap-3 p-3 rounded-lg bg-cyan-600 hover:bg-cyan-700 transition-colors mb-2',
+            }}
+          >
+            <Database size={20} />
+            <span className="font-medium">Prisma</span>
+          </Link>
+
+          <Link
+            to="/demo/tanstack-query"
+            onClick={() => setIsOpen(false)}
+            className="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-800 transition-colors mb-2"
+            activeProps={{
+              className:
+                'flex items-center gap-3 p-3 rounded-lg bg-cyan-600 hover:bg-cyan-700 transition-colors mb-2',
+            }}
+          >
+            <Network size={20} />
+            <span className="font-medium">TanStack Query</span>
+          </Link>
+
+          <Link
             to="/demo/start/server-funcs"
             onClick={() => setIsOpen(false)}
             className="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-800 transition-colors mb-2"
@@ -169,32 +195,6 @@ export default function Header() {
               </Link>
             </div>
           )}
-
-          <Link
-            to="/demo/prisma"
-            onClick={() => setIsOpen(false)}
-            className="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-800 transition-colors mb-2"
-            activeProps={{
-              className:
-                'flex items-center gap-3 p-3 rounded-lg bg-cyan-600 hover:bg-cyan-700 transition-colors mb-2',
-            }}
-          >
-            <Database size={20} />
-            <span className="font-medium">Prisma</span>
-          </Link>
-
-          <Link
-            to="/demo/tanstack-query"
-            onClick={() => setIsOpen(false)}
-            className="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-800 transition-colors mb-2"
-            activeProps={{
-              className:
-                'flex items-center gap-3 p-3 rounded-lg bg-cyan-600 hover:bg-cyan-700 transition-colors mb-2',
-            }}
-          >
-            <Network size={20} />
-            <span className="font-medium">TanStack Query</span>
-          </Link>
 
           {/* Demo Links End */}
         </nav>
